@@ -7,13 +7,13 @@ components:
     -
         kind: Application
         name: nextjs
-        gitRepo: 'https://github.com/alexo-bunnyshell/bunnyshell-laravel10.git'
+        gitRepo: 'https://github.com/alexo-bunnyshell/bunnyshell-template-nextjs.git'
         gitBranch: main
         gitApplicationPath: .
         dockerCompose:
             build:
                 context: .
-                dockerfile: .Dockerfile
+                dockerfile: ./Dockerfile
                 target: runner
             environment:
             ports:
