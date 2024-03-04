@@ -1,0 +1,36 @@
+kind: Environment
+name: laravel-dev
+type: primary
+environmentVariables:
+    SAMPLE_VAR: '{{env.unique}}'
+components:
+    -
+        kind: Application
+        name: nextjs
+        gitRepo: 'https://github.com/alexo-bunnyshell/bunnyshell-template-nextjs.git'
+        gitBranch: main
+        gitApplicationPath: .
+        dockerCompose:
+            build:
+                context: .
+                dockerfile: ./Dockerfile
+                target: dev
+            environment:
+            ports:
+                - '3000:3000'
+        hosts:
+            -
+                hostname: 'web-{{ env.base_domain }}'
+                path: /
+                servicePort: 3000
+   
+security:
+    access:
+        allowedIps:
+            - 0.0.0.0/0
+        realIpTrustedProxies: null
+volumes:
+    -
+        name: database-data
+        size: 1Gi
+        type: network

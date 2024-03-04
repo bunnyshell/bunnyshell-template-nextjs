@@ -1,0 +1,13 @@
+name: NextJS 14 Development
+description: This is a boilerplate for creating a new NextJS 14 application.
+tags: [ node, next.js, react, typescript ]
+icons: [ node, next.js, react, typescript ]
+stack:
+  packages:
+    - name: Next.js
+      version: '14.1'
+    - name: Typescript
+      version: '5'
+    - name: Node.js
+      version: '20'
+discoverable: true
