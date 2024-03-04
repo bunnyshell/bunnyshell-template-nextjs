@@ -34,3 +34,9 @@ volumes:
         name: database-data
         size: 1Gi
         type: network
+dev:
+  nextjs:
+    -
+      containers:
+        nextjs:
+          remoteDevProfile: nextjs

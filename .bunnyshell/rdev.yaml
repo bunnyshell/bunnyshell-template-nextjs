@@ -1,0 +1,17 @@
+profiles:
+    nextjs:
+        command: ["npm", "run", "dev"]
+        syncPaths:
+            -   remotePath: /app
+                localPath: .
+        # portForwards:
+            # - "9003<9003"
+        environment:
+            ENV: test
+        resources:
+            requests:
+                cpu: 500m
+                memory: 500Mi
+            limits:
+                cpu: 2000m
+                memory: 2Gi
