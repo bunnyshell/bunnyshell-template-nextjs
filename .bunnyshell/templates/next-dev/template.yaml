@@ -1,5 +1,5 @@
 name: NextJS 14 Development
-description: This is a boilerplate for creating a new NextJS 14 application.
+description: This is a boilerplate for creating a new NextJS 14 project with TypeScript 5 and Node.js 20, suitable for remote development.
 tags: [ node, next.js, react, typescript ]
 icons: [ node, next.js, react, typescript ]
 stack:

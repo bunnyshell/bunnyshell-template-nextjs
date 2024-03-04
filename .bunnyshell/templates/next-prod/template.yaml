@@ -1,5 +1,5 @@
-name: Laravel 10 Development
-description: This is a boilerplate for creating a new Laravel environment with MySQL, Redis, Selenium.
+name: NextJS 14 Production
+description: This is a boilerplate for creating a new NextJS 14 project with TypeScript 5 and Node.js 20, in production mode.
 tags: [ node, next.js, react, typescript ]
 icons: [ node, next.js, react, typescript ]
 stack:
