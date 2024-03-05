@@ -3,7 +3,7 @@ profiles:
         command: ["npm", "run", "dev"]
         syncPaths:
             -   remotePath: /app
-                localPath: .
+                localPath: ..
         # portForwards:
             # - "9003<9003"
         environment:
