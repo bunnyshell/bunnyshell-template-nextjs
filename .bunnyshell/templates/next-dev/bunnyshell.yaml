@@ -7,7 +7,7 @@ components:
     -
         kind: Application
         name: nextjs
-        gitRepo: 'https://github.com/alexo-bunnyshell/bunnyshell-template-nextjs.git'
+        gitRepo: 'https://github.com/bunnyshell/template-nextjs.git'
         gitBranch: main
         gitApplicationPath: .
         dockerCompose:
